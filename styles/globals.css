@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+    --card-bg-rgba:250, 250, 250, 0.6;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-image: url('https://images.unsplash.com/photo-1670332339459-fe5d2093167a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+}
+
+.box1{
+  flex: 0 0 48vw !important;
+}
+.box2{
+  flex: 0 0 40vw;
+  order: 1;
+}
+
+.card_bg{
+  background: rgba(255,255,255,0.4);
+  border: 1px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  color: aliceblue;
+}
