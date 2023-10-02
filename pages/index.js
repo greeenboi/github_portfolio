@@ -23,7 +23,7 @@ const index = () => {
             </span>
           </div>
         </div>
-        <div className='flex box2 w-auto md:max-w-xl justify-center items-center md:max-h-xl  rounded-lg '><Image minW='sm'  position='relative' objectFit='cover' border='1px' borderColor='whiteAlpha.400' borderRadius='md' src='https://images.unsplash.com/photo-1693859507588-e69572086bde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80' alt='Dan Abramov' /></div>
+        <div className='flex box2 w-auto md:max-w-xl justify-center items-center md:max-h-xl  rounded-lg '><Image minW='sm'  position='relative' objectFit='cover' border='1px' borderColor='whiteAlpha.400' borderRadius='md' src='https://i.postimg.cc/Z5gvZpT7/Whats-App-Image-2023-10-01-at-21-30-57-ab8ad9d0.jpg' alt='Suvangs' /></div>
       </section>
     </main>
     

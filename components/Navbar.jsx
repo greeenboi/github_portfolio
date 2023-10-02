@@ -44,7 +44,7 @@ const Navbar = () => {
     <>
         {screenWidth <= 760 ?    (
            <nav className='min-w-screen flex flex-row items-center justify-between mb-1 backdrop-blur-sm bg-black bg-opacity-30 p-1'>
-                <Avatar name='Dan Abrahmov' src='https://images.unsplash.com/photo-1693859507588-e69572086bde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80' />
+                <Avatar name='Suvangs' src='https://i.postimg.cc/Z5gvZpT7/Whats-App-Image-2023-10-01-at-21-30-57-ab8ad9d0.jpg'  />
                 <button ref={btnRef} className='backdrop-blur-sm bg-white bg-opacity-10 py-1 mr-6 px-3 rounded-md' onClick={onOpen}>
                     <RxHamburgerMenu size={20} />
                 </button>
