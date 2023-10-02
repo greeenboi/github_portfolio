@@ -15,7 +15,7 @@ const index = () => {
           <h1 className=' mx-4 my-4 md:my-10 font-Onest text-4xl text-gray-900'>Hello, I'm <span className=' font-Pixel text_grad'>Suvan</span>, a <span className=' font-Dancing '>FullStack Software Developer</span> and a second year student at SRMIST.</h1>
           <h3 className=' my-4 md:my-12 font-Onest text-xl font-medium mx-4 text-gray-700'>I enjoy creating user-centric, delightful and helpful products of all types.</h3>
           <div className='flex flex-row justify-evenly items-center my-12 md:my-20 mx-6'>
-            <button className='shadow-md h-fit rounded-sm p-1'>My Resume</button>
+            <button className='shadow-md h-fit rounded-sm p-1' onClick={()=>{window.open('https://pdf.ac/1B5JKO')}}>My Resume</button>
             <span className='flex flex-row gap-12'>
             <a href='https://www.linkedin.com/in/suvan-gowri-shanker-596943261/'  className='w-min h-fit'><span className=' p-1 rounded-sm' ><AiOutlineLinkedin className='shadow-md'/></span></a>
             <a href='https://github.com/greeenboi/github_portfolio'  ><span className='p-1 rounded-sm' ><AiOutlineGithub className='shadow-md'/></span></a>

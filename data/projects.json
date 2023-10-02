@@ -3,36 +3,49 @@
         "Name" : "Glassy Notes",
         "Description" : "A simple note taking app",
         "ImageUrl" : "https://i.postimg.cc/BZxyX4vm/linkedinpost-glassy-notes.png",
-        "Link" : "https://github.com/greeenboi/Glassy-Notes"
+        "Link" : "https://github.com/greeenboi/Glassy-Notes",
+        "Featured" : true
     },
     {
         "Name" : "To Do list",
         "Description" : "To Do List on the Web",
         "ImageUrl" : "https://i.postimg.cc/mgJf7VWj/image-2023-10-02-133736415.png",
-        "Link" : "https://github.com/greeenboi/To-Do-List"
+        "Link" : "https://github.com/greeenboi/To-Do-List",
+        "Featured" : false
     },
     {
-        "Name" : "Glassy Notes",
-        "Description" : "A simple note taking app",
-        "ImageUrl" : "https://i.postimg.cc/BZxyX4vm/linkedinpost-glassy-notes.png",
-        "Link" : "https://github.com/greeenboi/Glassy-Notes"
+        "Name" : "Snake",
+        "Description" : "Popular retro game snake made with pygame along with a few other additions",
+        "ImageUrl" : "https://user-images.githubusercontent.com/118198968/215282936-ac7fe67e-08e2-40f2-917e-a19cbce7c081.png",
+        "Link" : "https://github.com/greeenboi/Snake-Game",
+        "Featured" : false
     },
     {
-        "Name" : "Glassy Notes",
-        "Description" : "A simple note taking app",
-        "ImageUrl" : "https://i.postimg.cc/BZxyX4vm/linkedinpost-glassy-notes.png",
-        "Link" : "https://github.com/greeenboi/Glassy-Notes"
+        "Name" : "Therapy",
+        "Description" : "The Next Innovation In Medicine",
+        "ImageUrl" : "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/002/464/454/datas/medium.png",
+        "Link" : "https://github.com/greeenboi/TheraPy",
+        "Featured" : false
     },
     {
-        "Name" : "Glassy Notes",
+        "Name" : "Qr Code Generator App",
         "Description" : "A simple note taking app",
-        "ImageUrl" : "https://i.postimg.cc/BZxyX4vm/linkedinpost-glassy-notes.png",
-        "Link" : "https://github.com/greeenboi/Glassy-Notes"
+        "ImageUrl" : "https://user-images.githubusercontent.com/118198968/232839534-e129d7fc-271f-41da-a113-9f4eab534202.png",
+        "Link" : "https://github.com/greeenboi/Qr-code-generator-app",
+        "Featured" : false
     },
     {
-        "Name" : "Glassy Notes",
-        "Description" : "A simple note taking app",
-        "ImageUrl" : "https://i.postimg.cc/BZxyX4vm/linkedinpost-glassy-notes.png",
-        "Link" : "https://github.com/greeenboi/Glassy-Notes"
+        "Name" : "Climate Catalyst",
+        "Description" : "Raising awareness about climate change, Aesthetically",
+        "ImageUrl" : "https://i.postimg.cc/2ygCs8xJ/image-2023-10-02-234629023.png",
+        "Link" : "https://github.com/greeenboi/climate-hacks",
+        "Featured" : false
+    },
+    {
+        "Name" : "Chat Bot",
+        "Description" : "A snarky chatbot made using DialoGPT, deployed on a flask server.",
+        "ImageUrl" : "https://user-images.githubusercontent.com/118198968/246205308-aae1c689-3f63-4bf6-8ec8-d603d7ef0dd6.png",
+        "Link" : "https://github.com/greeenboi/Python-ChatBot",
+        "Featured" : false
     }
 ]
