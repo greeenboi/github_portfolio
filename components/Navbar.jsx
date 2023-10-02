@@ -60,20 +60,20 @@ const Navbar = () => {
                     <DrawerOverlay backdropBlur='md' />
                     <DrawerContent backdropBlur='sm' bgColor='blackAlpha.400' opacity={10} >
                     <DrawerCloseButton />
-                    <DrawerHeader>Menu</DrawerHeader>
+                    <DrawerHeader color='white'>Menu</DrawerHeader>
 
                     <DrawerBody>
                         <Stack>
                             <Divider />
-                            <Link href='/' className='shadow-sm hover:bg-opacity-20 hover:bg-slate-50 hover:text-gray-600 transition-all rounded-lg p-2 '>Home</Link>
+                            <Link href='/' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-gray-400 transition-all rounded-lg p-2 '>Home</Link>
                             <StackDivider />
-                            <Link href='Projects' className='shadow-sm hover:bg-opacity-20 hover:bg-slate-50 hover:text-gray-600 transition-all rounded-lg p-2 '>Projects</Link>
+                            <Link href='Projects' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-gray-400 transition-all rounded-lg p-2 '>Projects</Link>
                             <Divider />
                         </Stack>
                     </DrawerBody>
 
                     <DrawerFooter>
-                        <Button variant='outline' mr={3} onClick={onClose}>
+                        <Button variant='outline' mr={3} onClick={onClose} color='white'>
                         close
                         </Button>
                     </DrawerFooter>
