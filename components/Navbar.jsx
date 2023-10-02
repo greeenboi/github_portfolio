@@ -31,6 +31,7 @@ const Navbar = () => {
             window.removeEventListener("resize", handleResize);
         };
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     , []);
 
     const { isOpen, onOpen, onClose } = useDisclosure()
