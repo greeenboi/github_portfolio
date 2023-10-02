@@ -1,3 +1,4 @@
+
 import { React, useEffect, useState, useRef } from 'react'
 
 import Link from 'next/link'
@@ -21,18 +22,19 @@ import { RxHamburgerMenu } from 'react-icons/rx'
 
 const Navbar = () => {
     
-    const [ screenWidth, checkScreenWidth ] =   useState([]);
-
+    const [ screenWidth, checkScreenWidth ] =   useState(0);
+    
     useEffect(() => {
         const handleResize = () => checkScreenWidth(window.innerWidth);
         window.addEventListener("resize", handleResize);
-        console.log(screenWidth);
+        // console.log(screenWidth);
         return () => {
             window.removeEventListener("resize", handleResize);
         };
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
     , []);
+    
 
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = useRef()
@@ -41,7 +43,7 @@ const Navbar = () => {
   return (
     <>
         {screenWidth <= 760 ?    (
-           <nav className='min-w-screen flex flex-row items-center justify-between mb-1 backdrop-blur-sm bg-white bg-opacity-10 p-1'>
+           <nav className='min-w-screen flex flex-row items-center justify-between mb-1 backdrop-blur-sm bg-black bg-opacity-30 p-1'>
                 <Avatar name='Dan Abrahmov' src='https://images.unsplash.com/photo-1693859507588-e69572086bde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80' />
                 <button ref={btnRef} className='backdrop-blur-sm bg-white bg-opacity-10 py-1 mr-6 px-3 rounded-md' onClick={onOpen}>
                     <RxHamburgerMenu size={20} />
@@ -77,7 +79,7 @@ const Navbar = () => {
                 </Drawer>
             </nav>
             ) : (
-            <nav className=' w-11/12 flex flex-row items-center justify-between my-6 mx-12 backdrop-blur-sm bg-white bg-opacity-10 px-1 rounded-2xl'>
+            <nav className=' w-11/12 flex flex-row items-center justify-between my-6 mx-12 backdrop-blur-sm bg-black bg-opacity-10 px-1 rounded-2xl'>
                 <div className='block'>
                 <Avatar name='Dan Abrahmov' src='https://images.unsplash.com/photo-1693859507588-e69572086bde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80' />
                 </div>
