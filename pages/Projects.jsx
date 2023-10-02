@@ -39,8 +39,8 @@ const Projects = () => {
   return (
     <>
     <Navbar/>
-    <main className='flex flex-col items-center min-h-screen py-2 relative'>
-        <section className='flex flex-row items-center justify-center w-full h-96 bg-black bg-opacity-40'>
+    <main className='flex flex-col items-center min-h-screen py-2 relative text-white'>
+        <section className='flex flex-row items-center justify-center w-full h-96  bg-black bg-opacity-40'>
             <div className='flex flex-col items-center justify-center'>
                 <p className='font-Raleway text-3xl font-semibold'>Projects</p>
                 <p className='font-Onest text-lg font-extralight'>Here are some of my projects</p>
@@ -55,7 +55,7 @@ const Projects = () => {
           ) : (
             jsonData.map((data, index)=>(
               <Card key={index} w={index === 0 ? 'xl' : 'sm'} className={index === 0 ? ' md:mx-64 my-4' : 'mx-2 my-4'}>
-                <CardBody  bgColor='rgba(18,18,18,0.9)'>
+                <CardBody  bgColor='rgba(18,18,18,0.6)'>
                   <h1 className={index === 0 ? 'block my-2 font-Onest text-4xl' : 'hidden'}>Featured:</h1>
                   <Image src={data.ImageUrl} alt='Project image' className='block w-full rounded-lg'/>
                   <Stack mt='6' spacing='3'>
@@ -67,7 +67,7 @@ const Projects = () => {
                   </Stack>
                 </CardBody>
                 <Divider />
-                <CardFooter backdropBlur='md' bgColor='rgba(18,18,18,0.9)'>
+                <CardFooter backdropBlur='md' bgColor='rgba(18,18,18,0.6)'>
                   <ButtonGroup spacing='2'>
                     <Button variant='solid' colorScheme='twitter' onClick={()=>{window.open(data.Link)}}>
                       <PiGithubLogo />

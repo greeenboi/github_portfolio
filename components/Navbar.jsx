@@ -48,7 +48,7 @@ const Navbar = () => {
                     <Avatar scale={2.2} name='Suvangs' src='https://i.postimg.cc/Z5gvZpT7/Whats-App-Image-2023-10-01-at-21-30-57-ab8ad9d0.jpg'  />
                 </Link>
                 <button ref={btnRef} className='backdrop-blur-sm bg-white bg-opacity-10 py-1 mr-6 px-3 rounded-md' onClick={onOpen}>
-                    <RxHamburgerMenu size={20} />
+                    <RxHamburgerMenu size={20} color='white'/>
                 </button>
                 <Drawer
                     isOpen={isOpen}
