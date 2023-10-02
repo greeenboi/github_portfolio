@@ -8,6 +8,7 @@ const theme = extendTheme({
     global: () => ({
       body: {
         bg: "",
+        fontFamily: ' "Onest", "Raleway", sans-serif',
       },
     }),
   },

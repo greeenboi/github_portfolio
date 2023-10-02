@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Onest:wght@100;200;300;400;500;600;700&family=Pixelify+Sans:wght@400;500;600&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -22,10 +23,10 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-image: url('https://images.unsplash.com/photo-1670332339459-fe5d2093167a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
-  background-repeat: no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.6) 100%), url('https://images.unsplash.com/photo-1670332339459-fe5d2093167a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
   background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size:cover;
 
 }
 
@@ -43,4 +44,38 @@ body {
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   color: aliceblue;
+}
+
+.contact_bg{
+  background: radial-gradient(circle, rgba(107,0,255,1) 20%, rgba(51,37,81,1) 74%);
+}
+
+/* rgb(51 37 81) */
+/* rgb(5 2 12) */
+
+
+.text_grad{
+  background: linear-gradient(
+        to right,
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%
+    );
+    width:min-content;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: textShine 5s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  0% {
+      background-position: 0% 50%;
+  }
+  100% {
+      background-position: 100% 50%;
+  }
 }

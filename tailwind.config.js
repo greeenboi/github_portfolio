@@ -6,6 +6,12 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      'Dancing' : ['Dancing Script', 'cursive' ],
+      'Onest' : ['Onest', 'sans-serif'],
+      'Pixel' : ['Pixelify Sans', 'cursive' ],
+      'Raleway' : ['Raleway', 'sans-serif' ]
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
