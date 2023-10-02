@@ -21,7 +21,7 @@ import { RxHamburgerMenu } from 'react-icons/rx'
 
 const Navbar = () => {
     
-    const [ screenWidth, checkScreenWidth ] =   useState();
+    const [ screenWidth, checkScreenWidth ] =   useState([]);
 
     useEffect(() => {
         const handleResize = () => checkScreenWidth(window.innerWidth);

@@ -16,6 +16,7 @@ import {
   Spinner,
 
 } from '@chakra-ui/react'
+
 const Projects = () => {
   const [jsonData, setJsonData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -53,10 +54,10 @@ const Projects = () => {
               </Stack>
           ) : (
             jsonData.map((data, index)=>(
-              <Card w={index === 0 ? 'xl' : 'sm'} className={index === 0 ? ' md:mx-64' : 'mx-2'}>
+              <Card key={index} w={index === 0 ? 'xl' : 'sm'} className={index === 0 ? ' md:mx-64 my-4' : 'mx-2 my-4'}>
                 <CardBody  bgColor='transparent'>
                   <h1 className={index === 0 ? 'block my-2 font-Onest text-4xl' : 'hidden'}>Featured:</h1>
-                  <img src={data.ImageUrl} alt='Project image' className='block w-full rounded-lg'/>
+                  <Image src={data.ImageUrl} alt='Project image' className='block w-full rounded-lg'/>
                   <Stack mt='6' spacing='3'>
                     <Heading size='md'>{data.Name}</Heading>
                     <Text>

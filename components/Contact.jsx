@@ -27,8 +27,8 @@ const Contact = () => {
   return (
     <>  
     <main className='flex flex-row w-full justify-center items-center my-12'>
-        <section className='w-11/12 rounded-md md:h-24 contact_bg p-6 flex flex-row justify-between items-center'>
-            <div className='flex flex-col'>
+        <section className='w-11/12 rounded-md md:h-24 contact_bg p-6 flex flex-col gap-2 md:flex-row justify-between items-center'>
+            <div className='flex flex-col gap-4 md:gap-2'>
                 <p className=' font-Raleway text-3xl font-semibold'>Wanna work together?</p>
                 <p className=' font-Onest text-lg font-extralight'>Feel free to react out for collaborations or just a friendly hi!👋</p>
             </div>
@@ -72,7 +72,7 @@ const Contact = () => {
                         <FormLabel>Message</FormLabel>
                         <Textarea type="text" name="message" rows={3} placeholder='Type Here....' size='md'/>
                         <FormHelperText>
-                          What's on your mind?
+                          What&apos;s on your mind?
                         </FormHelperText>
                       </FormControl>
                       
