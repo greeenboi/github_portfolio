@@ -17,8 +17,8 @@ const index = () => {
           <div className='flex flex-row justify-evenly items-center my-12 md:my-20 mx-6'>
             <button className='shadow-md h-fit rounded-sm p-1' onClick={()=>{window.open('https://pdf.ac/1B5JKO')}}>My Resume</button>
             <span className='flex flex-row gap-12'>
-            <a href='https://www.linkedin.com/in/suvan-gowri-shanker-596943261/'  className='w-min h-fit'><span className=' p-1 rounded-sm' ><AiOutlineLinkedin className='shadow-md'/></span></a>
-            <a href='https://github.com/greeenboi/github_portfolio'  ><span className='p-1 rounded-sm' ><AiOutlineGithub className='shadow-md'/></span></a>
+            <a href='https://www.linkedin.com/in/suvan-gowri-shanker-596943261/'  className='w-min h-fit'><span className=' p-1 rounded-sm' ><AiOutlineLinkedin className='shadow-md '/></span></a>
+            <a href='https://github.com/greeenboi/github_portfolio'  ><span className='p-1 rounded-sm' ><AiOutlineGithub  className='shadow-md'/></span></a>
             <a href='mailto:suvan.gowrishanker.204@gmail.com'  ><span className='p-1 rounded-sm' ><AiOutlineMail className='shadow-md'/></span></a>
             </span>
           </div>

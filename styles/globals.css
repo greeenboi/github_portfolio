@@ -12,6 +12,29 @@
 }
 
 
+html{
+  overflow-x: hidden;
+}
+
+
+html::-webkit-scrollbar {
+  width: 0.2em;
+}
+html::-webkit-scrollbar:hover {
+  width: 1em;
+}
+ 
+html::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+ 
+html::-webkit-scrollbar-thumb {
+  background-color: rgb(85, 6, 159);
+  outline: 1px solid rgb(0, 0, 0);
+}
+
+
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
