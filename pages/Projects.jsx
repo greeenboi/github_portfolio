@@ -55,19 +55,19 @@ const Projects = () => {
           ) : (
             jsonData.map((data, index)=>(
               <Card key={index} w={index === 0 ? 'xl' : 'sm'} className={index === 0 ? ' md:mx-64 my-4' : 'mx-2 my-4'}>
-                <CardBody  bgColor='rgba(0,0,0,0.4)'>
-                  <h1 className={index === 0 ? 'block my-2 font-Onest text-4xl' : 'hidden'}>Featured:</h1>
+                <CardBody  bgColor='rgba(0,0,0,0.9)'>
+                  <h1 className={index === 0 ? 'block my-2 font-Onest text-white text-4xl' : 'hidden'}>Featured:</h1>
                   <Image src={data.ImageUrl} alt='Project image' className='block w-full rounded-lg'/>
                   <Stack mt='6' spacing='3'>
                     <Heading size='md'>{data.Name}</Heading>
-                    <Text>
+                    <Text color='white'> 
                       {data.Description}
                     </Text>
                     
                   </Stack>
                 </CardBody>
                 <Divider />
-                <CardFooter backdropBlur='md' bgColor='rgba(0,0,0,0.4)'>
+                <CardFooter backdropBlur='md' bgColor='rgba(0,0,0,0.9)'>
                   <ButtonGroup spacing='2'>
                     <Button variant='solid' colorScheme='twitter' onClick={()=>{window.open(data.Link)}}>
                       <PiGithubLogo />
