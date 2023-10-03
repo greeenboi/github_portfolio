@@ -62,7 +62,7 @@ const Projects = () => {
                   <h1 className={index === 0 ? 'block my-2 font-Onest text-white text-4xl' : 'hidden'}>Featured:</h1>
                   <Image src={data.ImageUrl} alt='Project image' className='block w-full rounded-lg'/>
                   <Stack mt='6' spacing='3'>
-                    <Heading size='md'>{data.Name}</Heading>
+                    <Heading size='md' color='white'>{data.Name}</Heading>
                     <Text color='white'> 
                       {data.Description}
                     </Text>
