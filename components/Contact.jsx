@@ -42,36 +42,36 @@ const Contact = () => {
               >
                 <ModalOverlay />
                 <ModalContent backdropBlur='md' bgColor='blackAlpha.800' >
-                  <ModalHeader>Contact</ModalHeader>
+                  <ModalHeader color='white'>Contact</ModalHeader>
                   <ModalCloseButton />
                       <form action="https://formsubmit.co/suvan.gowrishanker.204@gmail.com" method="POST">
                   <ModalBody >
                     <Stack spacing={5} >
                       <FormControl isRequired >
-                        <FormLabel>Name</FormLabel>
+                        <FormLabel color='white'>Name</FormLabel>
                         <Input type='text' name="name"/>
-                        <FormHelperText>
+                        <FormHelperText color='white'>
                           Knowing your name would be nice.
                         </FormHelperText>
                       </FormControl>
                       <FormControl isRequired >
-                        <FormLabel>Email</FormLabel>
+                        <FormLabel color='white'>Email</FormLabel>
                         <Input type='Email' name="email"/>
-                        <FormHelperText>
+                        <FormHelperText color='white'>
                           How can I reach you?
                         </FormHelperText>
                       </FormControl>
                       <FormControl >
-                        <FormLabel>Subject</FormLabel>
+                        <FormLabel color='white'>Subject</FormLabel>
                         <Input type='text' />
-                        <FormHelperText>
+                        <FormHelperText color='white'>
                           What can I help you with?
                         </FormHelperText>
                       </FormControl>
                       <FormControl isRequired >
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel color='white'>Message</FormLabel>
                         <Textarea type="text" name="message" rows={3} placeholder='Type Here....' size='md'/>
-                        <FormHelperText>
+                        <FormHelperText color='white'>
                           What&apos;s on your mind?
                         </FormHelperText>
                       </FormControl>

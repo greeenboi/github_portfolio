@@ -3,10 +3,12 @@ import Navbar from '@/components/Navbar'
 import Contact from '@/components/Contact'
 import { Image } from '@chakra-ui/react'
 import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail } from 'react-icons/ai'
+import Head from 'next/head'
 
 const index = () => {
   return (
     <>
+    <Head>Home</Head>
     <Navbar />
       
     <main>

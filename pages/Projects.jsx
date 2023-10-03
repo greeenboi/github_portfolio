@@ -17,6 +17,8 @@ import {
 
 } from '@chakra-ui/react'
 
+import Head from 'next/head'
+
 const Projects = () => {
   const [jsonData, setJsonData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -38,6 +40,7 @@ const Projects = () => {
 
   return (
     <>
+    <Head>Projects</Head>
     <Navbar/>
     <main className='flex flex-col items-center min-h-screen py-2 relative text-white'>
         <section className='flex flex-row items-center justify-center w-full h-96  bg-black bg-opacity-40'>
