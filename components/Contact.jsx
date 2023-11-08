@@ -21,13 +21,25 @@ import {
   
 } from '@chakra-ui/react'
 
+import { motion } from 'framer-motion'
+
 const Contact = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   
   return (
     <>  
     <main className='flex flex-row w-full justify-center items-center my-12 text-white'>
-        <section className='w-11/12 rounded-md md:h-24 contact_bg p-6 flex flex-col gap-2 md:flex-row justify-between items-center'>
+        <motion.section 
+          className='w-11/12 rounded-md md:h-24 contact_bg p-6 flex flex-col gap-2 md:flex-row justify-between items-center'
+          variants={{
+            hidden: {opacity: 0, y:75,},
+            visible: {opacity: 1, y:0, },
+          }}
+
+          initial="hidden"
+          whileInView="visible"
+          transition={{duration: 0.4, ease: "easeOut"}}
+        >
             <div className='flex flex-col gap-4 md:gap-2 my-2'>
                 <p className=' font-Raleway text-3xl font-semibold'>Wanna work together?</p>
                 <p className=' font-Onest text-lg font-extralight'>Feel free to react out for collaborations or just a friendly hi!👋</p>
@@ -49,28 +61,28 @@ const Contact = () => {
                     <Stack spacing={5} >
                       <FormControl isRequired >
                         <FormLabel color='white'>Name</FormLabel>
-                        <Input type='text' name="name"/>
+                        <Input type='text' name="name" color='white'/>
                         <FormHelperText color='white'>
                           Knowing your name would be nice.
                         </FormHelperText>
                       </FormControl>
                       <FormControl isRequired >
                         <FormLabel color='white'>Email</FormLabel>
-                        <Input type='Email' name="email"/>
+                        <Input type='Email' name="email" color='white'/>
                         <FormHelperText color='white'>
                           How can I reach you?
                         </FormHelperText>
                       </FormControl>
                       <FormControl >
                         <FormLabel color='white'>Subject</FormLabel>
-                        <Input type='text' />
+                        <Input type='text'  color='white'/>
                         <FormHelperText color='white'>
                           What can I help you with?
                         </FormHelperText>
                       </FormControl>
                       <FormControl isRequired >
                         <FormLabel color='white'>Message</FormLabel>
-                        <Textarea type="text" name="message" rows={3} placeholder='Type Here....' size='md'/>
+                        <Textarea type="text" name="message" rows={3} placeholder='Type Here....' size='md' color='white'/>
                         <FormHelperText color='white'>
                           What&apos;s on your mind?
                         </FormHelperText>
@@ -78,8 +90,8 @@ const Contact = () => {
                       
                     </Stack>
                   </ModalBody>
-                  <ModalFooter>
-                    <Button colorScheme='purple' type="submit">
+                  <ModalFooter className=' justify-between md:gap-20'>
+                    <Button colorScheme='purple' type="submit" >
                       Submit
                     </Button>
                     <Button variant='ghost' onClick={onClose}>Close</Button>
@@ -90,7 +102,7 @@ const Contact = () => {
                 </ModalContent>
               </Modal>
             </div>
-        </section>
+        </motion.section>
     </main>
     </>
   )

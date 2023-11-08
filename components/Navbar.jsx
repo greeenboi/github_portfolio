@@ -20,6 +20,9 @@ import {
   } from '@chakra-ui/react'
 import { RxHamburgerMenu } from 'react-icons/rx'
 
+
+
+
 const Navbar = () => {
     
     const [ screenWidth, checkScreenWidth ] =   useState(0);
@@ -63,13 +66,19 @@ const Navbar = () => {
                     <DrawerHeader color='white'>Menu</DrawerHeader>
 
                     <DrawerBody>
+                        
                         <Stack>
                             <Divider />
-                            <Link href='/' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-gray-400 transition-all rounded-lg p-2 '>Home</Link>
+                                <Link href='/' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-gray-400 transition-all rounded-lg p-2 '>Home</Link>
                             <StackDivider />
-                            <Link href='Projects' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-gray-400 transition-all rounded-lg p-2 '>Projects</Link>
+                                <Link href='About' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-gray-400 transition-all rounded-lg p-2 '>About</Link>
+                            <StackDivider />
+                                <Link href='Projects' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-gray-400 transition-all rounded-lg p-2 '>Projects</Link>
+                            <StackDivider />
+                                <Link href='Achievements' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-gray-400 transition-all rounded-lg p-2 '>Achievements</Link>
                             <Divider />
                         </Stack>
+                        
                     </DrawerBody>
 
                     <DrawerFooter>
@@ -83,7 +92,7 @@ const Navbar = () => {
             ) : (
             <nav className=' w-11/12 flex flex-row items-center justify-between my-6 mx-12 backdrop-blur-sm bg-black bg-opacity-10 px-1 rounded-2xl'>
                 <div className='block'>
-                <Avatar name='Dan Abrahmov' src='https://images.unsplash.com/photo-1693859507588-e69572086bde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80' />
+                
                 </div>
                 <div className='flex flex-row gap-12 md:gap-24 p-4 mx-6'>
                     <Link href='/' className='shadow-sm hover:bg-opacity-20 hover:bg-slate-50 hover:text-gray-500 transition-all rounded-lg p-2 '>Home</Link>

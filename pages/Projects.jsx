@@ -18,6 +18,14 @@ import {
 } from '@chakra-ui/react'
 
 import Head from 'next/head'
+import { motion } from 'framer-motion'
+
+
+const variants = {
+  visible:{
+    transition : { staggerChildren: 0.5 , delayChildren: 0.5}
+  }
+}
 
 const Projects = () => {
   const [jsonData, setJsonData] = useState([]);
@@ -40,16 +48,29 @@ const Projects = () => {
 
   return (
     <>
-    <Head>Projects</Head>
+    <Head>
+      <title>Projects | Suvangs</title>
+    </Head>
     <Navbar/>
     <main className='flex flex-col items-center min-h-screen py-2 relative text-white'>
-        <section className='flex flex-row items-center justify-center w-full h-96  bg-black bg-opacity-40'>
+        <motion.section 
+          className='flex flex-row items-center justify-center w-full h-96  bg-black bg-opacity-40'
+          variants={{
+            hidden: {opacity: 0, y:75,},
+            visible: {opacity: 1, y:0, },
+          }}
+
+          initial="hidden"
+          whileInView="visible"
+          transition={{duration: 0.3, ease: "easeOut"}}
+          viewport={{once:true,amount: 0.8}}
+        >
             <div className='flex flex-col items-center justify-center'>
                 <p className='font-Raleway text-3xl font-semibold'>Projects</p>
                 <p className='font-Onest text-lg font-extralight'>Here are some of my projects</p>
             </div>
-        </section>
-        <section className='my-12 w-full flex flex-wrap bg-black bg-opacity-60 mx-2 px-2 py-4 md:gap-24 justify-center '>
+        </motion.section>
+        <section className='my-12 scrollableframe  w-full flex flex-wrap bg-black bg-opacity-60 mx-2 px-2 py-4 md:gap-24 justify-center '>
         {
           isLoading ? (
               <Stack className='mx-6'>
@@ -57,6 +78,7 @@ const Projects = () => {
               </Stack>
           ) : (
             jsonData.map((data, index)=>(
+              
               <Card key={index} w={index === 0 ? 'xl' : 'sm'} className={index === 0 ? ' md:mx-64 my-4' : 'mx-2 my-4'}>
                 <CardBody  bgColor='rgba(0,0,0,0.9)'>
                   <h1 className={index === 0 ? 'block my-2 font-Onest text-white text-4xl' : 'hidden'}>Featured:</h1>
@@ -78,6 +100,7 @@ const Projects = () => {
                   </ButtonGroup>
                 </CardFooter>
               </Card>
+              
             ))
           )
         }

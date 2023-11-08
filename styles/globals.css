@@ -102,3 +102,27 @@ body {
       background-position: 100% 50%;
   }
 }
+
+.scrollableframe{
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  height: 120vh;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+.scrollableframe::-webkit-scrollbar {
+  width: 0.2em;
+}
+
+.scrollableframe::-webkit-scrollbar:hover {
+  width: 1em;
+}
+ 
+.scrollableframe::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
+}
+ 
+.scrollableframe::-webkit-scrollbar-thumb {
+  background-color: rgb(6, 123, 159);
+  outline: 1px solid rgb(0, 0, 0);
+}
