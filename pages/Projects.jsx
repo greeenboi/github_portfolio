@@ -19,7 +19,8 @@ import {
 
 import Head from 'next/head'
 import { motion } from 'framer-motion'
-
+// import firebase_app from "../firebase/firebase-app";
+// import { getFirestore, doc, getDoc, collection } from "firebase/firestore";
 
 const variants = {
   visible:{
@@ -45,6 +46,47 @@ const Projects = () => {
         });
     }, 2000); 
   }, []);
+
+  // const [projects, setProjects] = useState([]);
+
+  // useEffect(() => {
+  //   const db = getFirestore(firebase_app)
+  //   const fetchProjects = async () => {
+  //     try {
+
+  //       const projectCollection = await getDocs(collection(db, "projects"));
+  //       const projectsData = [];
+        
+  //       projectCollection.forEach((doc) => {
+  //         const{
+  //           Name,
+  //           Description,
+  //           Link,
+  //           ImageUrl,
+  //           isFeatured,
+  //         } = doc.data();
+  //           projectsData.push({
+  //             id: doc.id,
+  //             Name,
+  //             Description,
+  //             Link,
+  //             ImageUrl,
+  //             isFeatured,
+  //           });
+  //         });
+          
+  //       } 
+        
+  //       setProjects(projectData);
+  //       setIsLoading(false);
+  //     } catch (error) {
+  //       console.error('Error fetching projects:', error);
+  //       setIsLoading(false);
+  //     }
+  //   };
+
+  //   fetchProjects();
+  // }, []);
 
   return (
     <>

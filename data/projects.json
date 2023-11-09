@@ -7,6 +7,12 @@
         "Featured" : true
     },
     {
+        "Name" : "Rust OS",
+        "Description" : "A BareBones OS made with Rust running on Qemu",
+        "ImageUrl" : "https://i.postimg.cc/nrbpqxZt/image-2023-11-09-230437794.png",
+        "Link" : "https://github.com/greeenboi/blog_os"
+    },
+    {
         "Name" : "To Do list",
         "Description" : "To Do List on the Web",
         "ImageUrl" : "https://i.postimg.cc/mgJf7VWj/image-2023-10-02-133736415.png",

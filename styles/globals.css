@@ -53,12 +53,30 @@ body {
 
 }
 
+
+
 .box1{
   flex: 0 0 48vw !important;
 }
 .box2{
   flex: 0 0 40vw;
   order: 1;
+}
+@media screen and (min-width: 768px) {
+  
+  .box3{
+    margin: 0 2rem;
+    flex: 0 0 40vw;
+    max-height: 55rem;
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box3{
+    margin: 0 1rem !important;
+    width: 100% !important;
+  }
 }
 
 .card_bg{
