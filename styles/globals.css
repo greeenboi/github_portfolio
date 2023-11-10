@@ -29,7 +29,7 @@ html::-webkit-scrollbar-track {
 }
  
 html::-webkit-scrollbar-thumb {
-  background-color: #FFB000;
+  background-color: rgb(85, 6, 159);
   outline: 1px solid rgb(0, 0, 0);
 }
 
@@ -46,7 +46,7 @@ html::-webkit-scrollbar-thumb {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.6) 100%), url('https://images.unsplash.com/photo-1698430484424-38756b7e00a1?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+  background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.6) 100%), url('https://images.unsplash.com/photo-1670332339459-fe5d2093167a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1932&q=80');
   background-position: center;
   background-repeat: no-repeat;
   background-size:cover;
@@ -88,7 +88,7 @@ body {
 }
 
 .contact_bg{
-  background: radial-gradient(circle, #f5bf4a 20%, #3a2800 74%);
+  background: radial-gradient(circle, rgba(107,0,255,1) 20%, rgba(51,37,81,1) 74%);
 }
 
 /* rgb(51 37 81) */
@@ -98,10 +98,10 @@ body {
 .text_grad{
   background: linear-gradient(
         to right,
-        #FFB000 20%,
-        #FFCF9D 30%,
-        #004225 70%,
-        #9A3B3B 80%
+        #7953cd 20%,
+        #00affa 30%,
+        #0190cd 70%,
+        #764ada 80%
     );
     width:min-content;
     -webkit-background-clip: text;
