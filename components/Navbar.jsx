@@ -48,7 +48,7 @@ const Navbar = () => {
         {screenWidth <= 760 ?    (
            <nav className='min-w-screen flex flex-row items-center justify-between mb-1 backdrop-blur-sm bg-black bg-opacity-30 p-1'>
                 <Link href='/'>
-                    <Avatar scale={2.2} name='Suvangs' src='https://i.postimg.cc/Z5gvZpT7/Whats-App-Image-2023-10-01-at-21-30-57-ab8ad9d0.jpg'  />
+                    <Avatar scale={2.2} name='PratyushAgr' src='https://i.postimg.cc/pXZZY8GC/Whats-App-Image-2023-11-10-at-08-13-56-df201cfc.jpg'  />
                 </Link>
                 <button ref={btnRef} className='backdrop-blur-sm bg-white bg-opacity-10 py-1 mr-6 px-3 rounded-md' onClick={onOpen}>
                     <RxHamburgerMenu size={20} color='white'/>
