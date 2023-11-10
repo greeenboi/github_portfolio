@@ -45,7 +45,7 @@ const Contact = () => {
                 <p className=' font-Onest text-lg font-extralight'>Feel free to react out for collaborations or just a friendly hi!👋</p>
             </div>
             <div className='flex flex-row gap-12 md:mx-6 mx-2'>
-              <button onClick={onOpen} className=' bg-gray-700 rounded-md md:px-4 py-1 bg-opacity-60 border border-transparent hover:border-purple-600 transition-all  '>Contact me</button>
+              <button onClick={onOpen} className=' bg-gray-700 rounded-md md:px-4 py-1 bg-opacity-60 border border-transparent hover:border-yellow-300  transition-all  '>Contact me</button>
               <Modal
                 isCentered
                 onClose={onClose}
@@ -56,7 +56,7 @@ const Contact = () => {
                 <ModalContent backdropBlur='md' bgColor='blackAlpha.800' >
                   <ModalHeader color='white'>Contact</ModalHeader>
                   <ModalCloseButton />
-                      <form action="https://formsubmit.co/suvan.gowrishanker.204@gmail.com" method="POST">
+                      <form action="https://formsubmit.co/pratyushagarwalop@gmail.com" method="POST">
                   <ModalBody >
                     <Stack spacing={5} >
                       <FormControl isRequired >
@@ -91,7 +91,7 @@ const Contact = () => {
                     </Stack>
                   </ModalBody>
                   <ModalFooter className=' justify-between md:gap-20'>
-                    <Button colorScheme='purple' type="submit" >
+                    <Button colorScheme='yellow' type="submit" >
                       Submit
                     </Button>
                     <Button variant='ghost' onClick={onClose}>Close</Button>
