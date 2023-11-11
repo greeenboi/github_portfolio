@@ -237,7 +237,7 @@ const Achievements = () => {
               colorScheme='blackAlpha'
             />
             <Stack mt='6' spacing='3'>
-              <Heading size='md'>Completed Microsoft's Learn AI Skills Challenges </Heading>
+              <Heading size='md'>Completed Microsoft Learn AI Skills Challenges </Heading>
               <Text>
                 Completed the Cognitive Services, Ai Builder and Machine Learning Challenges.
               </Text>
