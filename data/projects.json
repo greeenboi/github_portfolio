@@ -53,5 +53,47 @@
         "ImageUrl" : "https://user-images.githubusercontent.com/118198968/246205308-aae1c689-3f63-4bf6-8ec8-d603d7ef0dd6.png",
         "Link" : "https://github.com/greeenboi/Python-ChatBot",
         "Featured" : false
+    },
+    {
+        "Name" : "Chat Application",
+        "Description" : "A simple full-stack ChatApp with Authentication and a database to store messages",
+        "ImageUrl" : "https://i.postimg.cc/sfhRBcth/image-2023-11-11-195908384.png",
+        "Link" : "https://github.com/greeenboi/Firebase-ChatApp",
+        "Featured" : false
+    },
+    {
+        "Name" : "Workify",
+        "Description" : "A Job Finder App",
+        "ImageUrl" : "https://i.postimg.cc/c12426NQ/Whats-App-Image-2023-11-11-at-20-04-23-bb6ae95c.jpg",
+        "Link" : "https://github.com/greeenboi/workify",
+        "Featured" : false
+    },
+    {
+        "Name" : "Midjourney Mini",
+        "Description" : "A prompt-based image generation website",
+        "ImageUrl" : "https://user-images.githubusercontent.com/118198968/255246771-920d0870-7b02-482d-85fc-59633be7af71.png",
+        "Link" : "https://github.com/greeenboi/midjourney_mini",
+        "Featured" : false
+    },
+    {
+        "Name" : "Minceraft",
+        "Description" : "Minecraft but coded in python with the Ursina engine",
+        "ImageUrl" : "https://i.postimg.cc/y6bXGhdv/image-2023-11-11-201038841.png",
+        "Link" : "https://github.com/greeenboi/Minceraft",
+        "Featured" : false
+    },
+    {
+        "Name" : "Memeweb",
+        "Description" : "A Meme Gallery",
+        "ImageUrl" : "https://user-images.githubusercontent.com/118198968/263776559-6015a117-c121-4b3c-82b2-63ad402d8b91.png",
+        "Link" : "https://github.com/greeenboi/memeweb",
+        "Featured" : false
+    },
+    {
+        "Name" : "SkillUp",
+        "Description" : "An Online Skills building platform",
+        "ImageUrl" : "https://i.postimg.cc/4dKQ5wtC/image-2023-11-11-201307037.png",
+        "Link" : "https://github.com/greeenboi/courses-website",
+        "Featured" : false
     }
 ]
