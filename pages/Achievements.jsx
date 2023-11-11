@@ -319,6 +319,27 @@ const Achievements = () => {
         </Card>
         </>
 
+        <>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
+          <CardBody colorScheme='blackAlpha'>
+            <Image
+              src='https://i.postimg.cc/bJgQykpV/Welcome-Badge-SWOC-Season-4.png'
+              alt='SWOC'
+              borderRadius='lg'
+              colorScheme='blackAlpha'
+            />
+            <Stack mt='6' spacing='3'>
+              <Heading size='md'>Social Winter of Code Contributor</Heading>
+              <Text>
+                Participating in SWOC 2024 as a contributor
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          
+        </Card>
+        </>
+
       </Chrono>
 
       </section>
