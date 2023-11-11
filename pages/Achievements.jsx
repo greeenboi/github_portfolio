@@ -30,7 +30,7 @@ import {
   useDisclosure,
 
 } from '@chakra-ui/react'
-
+import { motion } from 'framer-motion'
 
 const Achievements = () => {
   
@@ -38,9 +38,25 @@ const Achievements = () => {
     <main className=''>
       <Head><title>Achievements | Suvangs</title></Head>
       <Navbar/>
+      <motion.section 
+        className='flex flex-row items-center justify-center w-full h-48 text-white mt-2 mb-4 bg-black bg-opacity-40'
+        variants={{
+          hidden: {opacity: 0, y:75,},
+          visible: {opacity: 1, y:0, },
+        }}
+
+        initial="hidden"
+        whileInView="visible"
+        transition={{duration: 0.3, ease: "easeOut"}}
+        viewport={{once:true,amount: 0.8}}
+      >
+          <div className='flex flex-col items-center justify-center'>
+              <p className='font-Raleway text-3xl font-semibold'>Achievements</p>
+              <p className='font-Onest text-lg font-extralight'>Some of my Proudest Moments</p>
+          </div>
+      </motion.section>
       
       <section className='flex flex-col items-center min-h-screen m-2 py-2 relative text-white achievementspage'>
-
       <Chrono
         // items={items}
         mode="VERTICAL_ALTERNATING"
@@ -52,6 +68,8 @@ const Achievements = () => {
           cardForeColor: "violet",
           titleColor: "black",
           titleColorActive: "red",
+          primary: "rgba(15,15,15,0.8)",
+          secondary: "rgba(128, 0, 128,0.7)",
         }}
         itemWidth={150}
       >
