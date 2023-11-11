@@ -50,7 +50,7 @@ const Achievements = () => {
         viewport={{once:true,amount: 0.8}}
       >
         
-          <div className='flex flex-col items-center justify-center'>
+          <div className='flex flex-col items-center justify-center overflow-y-clip'>
               <p className='font-Raleway text-3xl font-semibold'>Achievements</p>
               <p className='font-Onest text-lg font-extralight'>Some of my Proudest Moments</p>
           </div>
