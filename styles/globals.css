@@ -144,3 +144,9 @@ body {
   background-color: rgb(6, 123, 159);
   outline: 1px solid rgb(0, 0, 0);
 }
+
+.achievementspage{
+  max-height: 120vh;
+  /* overflow-y: scroll; */
+}
+

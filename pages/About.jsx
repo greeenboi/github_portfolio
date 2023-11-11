@@ -4,7 +4,12 @@ import Head from 'next/head'
 import Contact from '@/components/Contact'
 import { Image } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import { AiOutlineLinkedin, AiOutlineGithub, AiOutlineMail } from 'react-icons/ai'
+import GitHubCalendar from "react-github-calendar";
+
+const minimalTheme = {
+  light: ['hsl(0, 0%, 40%)', 'lightseagreen'],
+  dark: ['hsl(0, 0%, 30%)', 'lightseagreen'],
+};
 
 const About = () => {
   return (
@@ -57,7 +62,7 @@ const About = () => {
           viewport={{once:true,amount: 0.8}}
         >
           <h1 className=' mx-4 my-4 md:my-10 font-Onest text-4xl text-gray-200'>Hello, I&apos;m <span className=' font-Pixel text_grad'>Suvan</span>, a <span className=' font-Dancing '>FullStack Software Developer</span> and a second year student at SRMIST.</h1>
-          <h3 className=' my-4 md:my-12 font-Onest text-xl font-medium mx-4 text-gray-500 max-h-96 over'>
+          <h3 className=' my-4 md:my-12 font-Onest text-xl font-medium mx-4 text-gray-500 md:max-h-96 lg:h-full overflow-scroll overflow-x-hidden scrollableframe'>
             My Passion for Programming began with my first C program I made almost 8 years ago.<br/><br/>
             Now I am an accomplished Software Developer with a passion for creating and developing web applications, Cross-platform Desktop Applications and writing system level programs with Rust.<br/><br/>
             I am skilled in Python, JavaScript, C, C++, Java, Rust, HTML, CSS, SQL, MongoDB, React, Next.js, Node.js, Express.js, Electron.js, Tauri, Chakra UI, Tailwind CSS, Material UI, Bootstrap, Git, GitHub, Linux, Windows, and many more.<br/><br/>
@@ -71,6 +76,19 @@ const About = () => {
         </motion.div>
         
       </main>
+      <section className=' hidden lg:flex flex-row justify-center my-4  md:w-full py-4 bg-gray-700 bg-opacity-40'>
+        <GitHubCalendar
+          username="greeenboi"
+          blockSize={14}
+          blockRadius={7}
+          blockMargin={5}
+          style={{color: 'white'}}
+          fontSize={16}
+          // loading={true}
+          theme={minimalTheme}
+        />
+
+      </section>
 
       <Contact/>
     </>
