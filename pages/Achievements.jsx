@@ -39,7 +39,7 @@ const Achievements = () => {
       <Head><title>Achievements | Suvangs</title></Head>
       <Navbar/>
       <motion.section 
-        className='flex flex-row items-center justify-center w-full h-48 text-white mt-2 mb-4 bg-black bg-opacity-40'
+        className='flex flex-row items-center justify-evenly w-full h-48 text-white mt-2 mb-4 bg-black bg-opacity-40'
         variants={{
           hidden: {opacity: 0, y:75,},
           visible: {opacity: 1, y:0, },
@@ -50,10 +50,22 @@ const Achievements = () => {
         transition={{duration: 0.3, ease: "easeOut"}}
         viewport={{once:true,amount: 0.8}}
       >
+        
           <div className='flex flex-col items-center justify-center'>
               <p className='font-Raleway text-3xl font-semibold'>Achievements</p>
               <p className='font-Onest text-lg font-extralight'>Some of my Proudest Moments</p>
           </div>
+        
+        <div>
+        <Stat>
+          <StatLabel>CGPA</StatLabel>
+          <StatNumber>8.2</StatNumber>
+          <StatHelpText>
+            <StatArrow type='increase' colorScheme='cyan'/>
+            82.33%
+          </StatHelpText>
+        </Stat>
+        </div>
       </motion.section>
       
       <section className='flex flex-col items-center min-h-screen m-2 py-2 relative text-white achievementspage'>
@@ -179,6 +191,43 @@ const Achievements = () => {
           <Divider />
           
         </Card>
+        </>
+
+        <>
+          <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
+            <CardBody colorScheme='blackAlpha'>
+              <Image
+                src='https://i.postimg.cc/J05GQqHR/Whats-App-Image-2023-11-11-at-18-05-27-714a5603.jpg'
+                alt='oodp Hack'
+                borderRadius='lg'
+                colorScheme='blackAlpha'
+              />
+              <Stack mt='6' spacing='3'>
+                <Heading size='md'>Certificate of Participation</Heading>
+                <Text>
+                  Certificate of Participation for the event &quot;Object Oriented Design Hack&quot; 
+                </Text>
+                
+              </Stack>
+            </CardBody>
+            <Divider />
+            
+          </Card>
+        </>
+
+        <>
+          <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
+            <CardBody colorScheme='blackAlpha'>
+              <Image
+                src='https://i.postimg.cc/tC81yYdd/image-2023-11-11-191352336.png'
+                alt='Hackerrank'
+                borderRadius='lg'
+                colorScheme='blackAlpha'
+              />
+            </CardBody>
+          
+            
+          </Card>
         </>
 
         <>
