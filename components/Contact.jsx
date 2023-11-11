@@ -42,7 +42,7 @@ const Contact = () => {
         >
             <div className='flex flex-col gap-4 md:gap-2 my-2'>
                 <p className=' font-Raleway text-3xl font-semibold'>Wanna work together?</p>
-                <p className=' font-Onest text-lg font-extralight'>Feel free to react out for collaborations or just a friendly hi!👋</p>
+                <p className=' font-Onest text-lg font-extralight'>Feel free to reach out for collaborations or just a friendly hi!👋</p>
             </div>
             <div className='flex flex-row gap-12 md:mx-6 mx-2'>
               <button onClick={onOpen} className=' bg-gray-700 rounded-md md:px-4 py-1 bg-opacity-60 border border-transparent hover:border-purple-600 transition-all  '>Contact me</button>
