@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Contact from '@/components/Contact'
-import Fellowship from '@/components/fellowship'
+import Fellowship from '@/components/Fellowship'
 import Internship from '@/components/Internship'
 import Internship2 from '@/components/Internship2'
 import { Chrono } from 'react-chrono';
