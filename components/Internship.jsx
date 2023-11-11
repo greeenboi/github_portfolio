@@ -29,15 +29,15 @@ const Internship = () => {
 
   return (
     <>
-        <Card maxW='sm' colorScheme='blackAlpha'>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
           <CardBody colorScheme='blackAlpha'>
 
-            <Modal isOpen={isOpen} onClose={onClose}>
+            <Modal isOpen={isOpen} onClose={onClose} bgColor='rgba(0,0,0,0.9)' textColor='white'>
               <ModalOverlay />
-              <ModalContent>
+              <ModalContent bgColor='rgba(0,0,0,0.9)' textColor='white'>
                 <ModalHeader>Acceptance Letter</ModalHeader>
                 <ModalCloseButton />
-                <ModalBody >
+                <ModalBody bgColor='rgba(0,0,0,0.9)' textColor='white'>
                 <Image
                   src='https://i.postimg.cc/1XSfcqW0/1690830475486-1-pages-to-jpg-0002.jpg'
                   alt='internship'

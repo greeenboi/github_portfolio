@@ -56,7 +56,7 @@ const Achievements = () => {
         itemWidth={150}
       >
         <>
-        <Card maxW='sm' colorScheme='blackAlpha'>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
           <CardBody colorScheme='blackAlpha'>
             <Image
               src='https://i.postimg.cc/Kz4bVzzy/certification-of-appreciation-by-iites-roorkee-page-0001.jpg'
@@ -78,7 +78,7 @@ const Achievements = () => {
         </>
 
         <>
-        <Card maxW='sm' colorScheme='blackAlpha'>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
           <CardBody colorScheme='blackAlpha'>
             <Image
               src='https://i.postimg.cc/m2r9jx7f/Suvan-Nov-2022-training-ML-page-0001.jpg'
@@ -100,7 +100,7 @@ const Achievements = () => {
         </>
 
         <>
-        <Card maxW='sm' colorScheme='blackAlpha'>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
           <CardBody colorScheme='blackAlpha'>
             <Image
               src='https://i.postimg.cc/GhyjShfN/Suvan-Nov-2022-training-AI-page-0001-1.jpg'
@@ -122,7 +122,7 @@ const Achievements = () => {
         </>
 
         <>
-        <Card maxW='sm' colorScheme='blackAlpha'>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
           <CardBody colorScheme='blackAlpha'>
             <Image
               src='https://i.postimg.cc/vZtgTcTp/image-2023-11-11-143928108.png'
@@ -143,7 +143,7 @@ const Achievements = () => {
         </>
 
         <>
-        <Card maxW='sm' colorScheme='blackAlpha'>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
           <CardBody colorScheme='blackAlpha'>
             <Image
               src='https://i.postimg.cc/3xx1K5JC/figma-event.png'
@@ -164,7 +164,7 @@ const Achievements = () => {
         </>
 
         <>
-        <Card maxW='sm' colorScheme='blackAlpha'>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
           <CardBody colorScheme='blackAlpha'>
             <Image
               src='https://i.postimg.cc/VNjdp5Q7/robocon.png'
@@ -185,7 +185,7 @@ const Achievements = () => {
         </>
         
         <>
-        <Card maxW='sm' colorScheme='blackAlpha'>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
           <CardBody colorScheme='blackAlpha'>
             <Image
               src='https://i.postimg.cc/L41R9w0P/impactai.png'
@@ -210,7 +210,7 @@ const Achievements = () => {
         <Internship />
         
         <>
-        <Card maxW='sm' colorScheme='blackAlpha'>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
           <CardBody colorScheme='blackAlpha'>
             <Image
               src='https://i.postimg.cc/s2VmLXT3/Microsoft-Learn-AI-Skills-Challenge-Certificate-of-completion-EN-US-1-page-0001.jpg'
@@ -232,6 +232,26 @@ const Achievements = () => {
 
         <Internship2 />
 
+        <>
+        <Card maxW='sm' bgColor='rgba(0,0,0,0.9)' textColor='white'>
+          <CardBody colorScheme='blackAlpha'>
+            <Image
+              src='https://i.postimg.cc/fW0k0hNK/Suvan-Gowri-Shanker-RA2211003010670-1-page-0001.jpg'
+              alt='SIH'
+              borderRadius='lg'
+              colorScheme='blackAlpha'
+            />
+            <Stack mt='6' spacing='3'>
+              <Heading size='md'>3rd Place in Internal Software Round of Smart india Hackathon </Heading>
+              <Text>
+                3rd Place in Internal Software Round of Smart india Hackathon conducted across all of the SRMIST campuses.
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          
+        </Card>
+        </>
 
       </Chrono>
 
