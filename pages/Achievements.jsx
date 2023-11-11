@@ -20,14 +20,13 @@ import {
   ButtonGroup,
   Button,
   Heading,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  useDisclosure,
+  Stat,
+  StatLabel,
+  
+  StatNumber,
+  StatHelpText,
+  StatArrow,
+  StatGroup,
 
 } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
