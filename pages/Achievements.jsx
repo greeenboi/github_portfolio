@@ -2,6 +2,9 @@ import React from 'react'
 import Head from 'next/head'
 import Navbar from '@/components/Navbar'
 import Contact from '@/components/Contact'
+import Fellowship from '@/components/fellowship'
+import Internship from '@/components/Internship'
+import Internship2 from '@/components/Internship2'
 import { Chrono } from 'react-chrono';
 import { 
   Card, 
@@ -17,31 +20,17 @@ import {
   ButtonGroup,
   Button,
   Heading,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
 
 } from '@chakra-ui/react'
 
-
-
-const items = [
-  {
-    title: "October 2022",
-    cardTitle: "Ecell Ambassador Program",
-    cardSubtitle: "Conducted by Aries IIT Roorkee",
-    cardDetailedText: "Certificate of Excellence for being a part of the Ecell Ambassador Program conducted by Aries IIT Roorkee.",
-  },
-  {
-    title: "February 2022",
-    cardTitle: "Event 2",
-    cardSubtitle: "Event 2 Subtitle",
-    cardDetailedText: "This is the second event on the timeline.",
-  },
-  {
-    title: "March 2022",
-    cardTitle: "Event 3",
-    cardSubtitle: "Event 3 Subtitle",
-    cardDetailedText: "This is the third event on the timeline.",
-  }
-];
 
 const Achievements = () => {
   
@@ -50,14 +39,14 @@ const Achievements = () => {
       <Head><title>Achievements | Suvangs</title></Head>
       <Navbar/>
       
-      <section className='flex flex-col items-center min-h-screen py-2 relative text-white achievementspage'>
+      <section className='flex flex-col items-center min-h-screen m-2 py-2 relative text-white achievementspage'>
 
       <Chrono
         // items={items}
         mode="VERTICAL_ALTERNATING"
-        hideControls
-        // slideShow
-        // slideItemDuration={4000}
+        // hideControls
+        slideShow
+        slideItemDuration={4000}
         theme={{
           cardBgColor: "transparent",
           cardForeColor: "violet",
@@ -195,6 +184,54 @@ const Achievements = () => {
         </Card>
         </>
         
+        <>
+        <Card maxW='sm' colorScheme='blackAlpha'>
+          <CardBody colorScheme='blackAlpha'>
+            <Image
+              src='https://i.postimg.cc/L41R9w0P/impactai.png'
+              alt='Training'
+              borderRadius='lg'
+              colorScheme='blackAlpha'
+            />
+            <Stack mt='6' spacing='3'>
+              <Heading size='md'>1st place in ImpactAI Hackathon</Heading>
+              <Text>
+                1st place in Impact AI conducted by Aaruush
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          
+        </Card>
+        </>
+
+        <Fellowship />
+
+        <Internship />
+        
+        <>
+        <Card maxW='sm' colorScheme='blackAlpha'>
+          <CardBody colorScheme='blackAlpha'>
+            <Image
+              src='https://i.postimg.cc/s2VmLXT3/Microsoft-Learn-AI-Skills-Challenge-Certificate-of-completion-EN-US-1-page-0001.jpg'
+              alt='Msoft Learn AI skills'
+              borderRadius='lg'
+              colorScheme='blackAlpha'
+            />
+            <Stack mt='6' spacing='3'>
+              <Heading size='md'>Completed Microsoft's Learn AI Skills Challenges </Heading>
+              <Text>
+                Completed the Cognitive Services, Ai Builder and Machine Learning Challenges.
+              </Text>
+            </Stack>
+          </CardBody>
+          <Divider />
+          
+        </Card>
+        </>
+
+        <Internship2 />
+
 
       </Chrono>
 

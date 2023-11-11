@@ -146,7 +146,8 @@ body {
 }
 
 .achievementspage{
-  max-height: 120vh;
+  
+  max-height: 85vh;
   /* overflow-y: scroll; */
 }
 
