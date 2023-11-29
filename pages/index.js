@@ -13,7 +13,6 @@ const index = () => {
     <>
     <Head>
       <title>Home | Suvangs</title>
-      
     </Head>
     
     <Navbar />
