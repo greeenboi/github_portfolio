@@ -16,7 +16,8 @@ import {
     Stack,
     StackDivider,
     Divider,
-    useDisclosure
+    useDisclosure,
+    useMediaQuery
   } from '@chakra-ui/react'
 import { RxHamburgerMenu } from 'react-icons/rx'
 
@@ -25,7 +26,7 @@ import { RxHamburgerMenu } from 'react-icons/rx'
 
 const Navbar = () => {
     
-
+    const [isLargerThan768] = useMediaQuery("(min-width: 768px)");
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = useRef()
 
@@ -36,9 +37,22 @@ const Navbar = () => {
         <Link href='/'>
             <Avatar scale={2.2} name='Suvangs' src='https://i.postimg.cc/Z5gvZpT7/Whats-App-Image-2023-10-01-at-21-30-57-ab8ad9d0.jpg'  />
         </Link>
-        <button ref={btnRef} className='backdrop-blur-sm bg-white bg-opacity-10 py-1 mr-6 px-3 rounded-md' onClick={onOpen}>
-            <RxHamburgerMenu size={20} color='white'/>
-        </button>
+        {isLargerThan768 ? 
+            (
+                <div className='flex flex-row gap-10 mx-12'>
+                    <Link href='/' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-violet-400 transition-all rounded-lg p-2 '>Home</Link>
+                    <Link href='About' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-violet-400 transition-all rounded-lg p-2 '>About</Link>
+                    <Link href='Projects' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-violet-400 transition-all rounded-lg p-2 '>Projects</Link>
+                    <Link href='Achievements' className='shadow-sm hover:bg-opacity-20 text-white hover:bg-slate-50 hover:text-violet-400 transition-all rounded-lg p-2 '>Achievements</Link>
+                    
+                </div>
+            ) : (
+                // Hamburger menu for smaller screens
+                <button ref={btnRef} className='backdrop-blur-sm bg-white bg-opacity-10 py-1 mr-6 px-3 rounded-md' onClick={onOpen}>
+                    <RxHamburgerMenu size={20} color='white'/>
+                </button>
+            )
+        }
         <Drawer
             isOpen={isOpen}
             placement='right'
